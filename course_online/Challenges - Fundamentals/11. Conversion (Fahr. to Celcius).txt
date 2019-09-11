@@ -1,0 +1,15 @@
+#include<iostream>
+using namespace std;
+int main() {
+    int min_value, max_value, step;
+    cin>>min_value>>max_value>>step;
+    int i= min_value;
+    while (i<=max_value){
+        int C, x;
+        x = i-32;
+        C= (5*x)/9 ;
+        cout<<i<<" "<<C<<endl;
+        i= i+ step;
+    }
+	return 0;
+}

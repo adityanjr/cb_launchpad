@@ -1,0 +1,29 @@
+#include<iostream>
+using namespace std;
+
+int oddEven(int n){
+    int oddSum=0;
+    int evenSum=0;
+    while(n!=0){
+        int x = n%10;
+        if(x%2==0){
+            evenSum += x;
+        }
+        else{
+            oddSum += x;
+        }
+        n /= 10;
+    }
+    if(evenSum%4 == 0 || oddSum%3 == 0){
+        cout<<"Yes"<<endl;
+    }
+    else cout<<"No"<<endl;
+}
+int main() {
+    int num, numCar;
+    cin>>num;
+    for (int i=1; i<=num; i++){
+        cin>>numCar;
+        oddEven(numCar);
+    }
+}

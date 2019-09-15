@@ -17,7 +17,7 @@ void sortArr(int arr[], int n)
     for (i = 0; i < n; i++) {
         switch (arr[i]) {
         case 0:
-            cnt0++; 
+            cnt0++;
             break;
         case 1:
             cnt1++;
@@ -53,7 +53,6 @@ void sortArr(int arr[], int n)
     printArr(arr, n);
 }
 
-// Driver code
 int main()
 {
     int arr[100];

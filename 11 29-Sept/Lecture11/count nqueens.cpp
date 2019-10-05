@@ -1,6 +1,6 @@
-#include <bits/stdc++.h>
+#include <iostream>
 using namespace std;
-	
+int count=0;
 bool isSafe(int maze[][10], int row, int col, int n){
 	int i, j;
 	//col
@@ -12,7 +12,6 @@ bool isSafe(int maze[][10], int row, int col, int n){
 		}
 		i--;
 	}
-
 	//left diagonal
 	i = row-1;
 	j = col-1;
@@ -34,35 +33,16 @@ bool isSafe(int maze[][10], int row, int col, int n){
 		i--;
 		j++;
 	}
-
 	// position is safe
 	return true;
-
 }
 
 bool nQueen(int maze[][10], int row, int n){
 	//base case
 	 if(row == n){
-	 	// print maze
-	 	for (int i = 0; i < n; ++i)
-	 	{
-	 		for (int j = 0; j < n; j++)
-	 		{
-	 			if(maze[i][j]){
-	 				cout<<"Q ";
-	 			}
-	 			else{
-	 				cout<<"_ ";
-	 			}
-	 			
-	 		}
-	 		cout<<endl;
-	 	}
-	 	cout<<"------------------------------------------------------------------"<<endl;
+	 	++count;
 	 	return false;
 	 }
-
-
 	 for (int col = 0; col < n; col++)
 	 {
 	 	if(isSafe(maze,row, col, n)){
@@ -76,16 +56,13 @@ bool nQueen(int maze[][10], int row, int n){
 	 	}
 	 }
 	 return false;
-
 }
-
-
 
 int main(int argc, char const *argv[])
 {	int maze[10][10];
 	int n;
 	cin>>n;
 	nQueen(maze, 0, n);
-
+    cout<<count;
 	return 0;
 }

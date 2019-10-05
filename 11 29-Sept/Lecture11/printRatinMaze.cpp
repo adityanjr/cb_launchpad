@@ -1,7 +1,6 @@
 #include <bits/stdc++.h>
 using namespace std;
-	
-		
+
 void printMatrix(int matrix[5][4], int row, int col){
 	for (int i = 0; i <= row; ++i)
 	{
@@ -46,7 +45,7 @@ bool ratinMaze(int maze[5][4], int i, int j, int row, int col, int sol[5][4]){
 
 
 int main(int argc, char const *argv[])
-{	
+{
 
 	int maze[5][4] = {{0,0,0,1},
 					  {0,1,0,1},
@@ -61,17 +60,6 @@ int main(int argc, char const *argv[])
 
 	bool pathPossible = ratinMaze(maze, 0, 0, 4,3,sol);
 	pathPossible ==1? cout<<"path exist"<<endl : cout<<"path do not exist"<<endl;
-	
+
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-

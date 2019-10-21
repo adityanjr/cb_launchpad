@@ -25,7 +25,6 @@ void countingSort(int* arr, int n){
 
 }
 
-
 int main(int argc, char const *argv[])
 {
 	int arr[12] = {5,9,2,4,3,1,2,9,8,7,15,10};

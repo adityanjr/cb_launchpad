@@ -6,7 +6,7 @@ void countingSort(int* arr, int n){
 	{
 		maximum = max(maximum, arr[i]);
 	}
-	int* freqArr = new int[maximum+1]()c;
+	int* freqArr = new int[maximum+1]();
 	//store the frequencies of all the numbers in frequency array
 	for (int i = 0; i < n; ++i)
 	{

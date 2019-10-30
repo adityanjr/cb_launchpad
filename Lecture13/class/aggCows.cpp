@@ -48,24 +48,3 @@ int main(int argc, char const *argv[])
 	cout<<binarySearch(stalls, N, C)<<endl;
 	return 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

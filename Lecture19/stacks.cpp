@@ -30,6 +30,5 @@ int main(){
 	st.push(4);
 	st.top();
 	st.top();
-	cout<<"--------------------"<<endl;
 	return 0;
 }

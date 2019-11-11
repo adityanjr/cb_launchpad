@@ -18,7 +18,6 @@ public:
 			delete next;
 		}
 	}
-	
 };
 template<typename T>
 class hashTable
@@ -28,7 +27,7 @@ class hashTable
 	int totalSize;
 
 	int hashFunc(string k){
-		int idx =0;
+		int idx = 0;
 		int L = k.length();
 		int mulFactor = 1;
 		for (int i = 0; i < L; ++i)

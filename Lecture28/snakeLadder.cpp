@@ -18,6 +18,7 @@ struct queueEntry
 // If there is no snake or ladder from cell i, then move[i] is -1
 // Otherwise move[i] contains cell to which snake or ladder at i
 // takes to.
+
 int getMinDiceThrows(int move[], int N)
 {
 	// The graph has N vertices. Mark all the vertices as
@@ -49,6 +50,7 @@ int getMinDiceThrows(int move[], int N)
 		// Otherwise dequeue the front vertex and enqueue
 		// its adjacent vertices (or cell numbers reachable
 		// through a dice throw)
+		
 		q.pop();
 		for (int j=v+1; j<=(v+6) && j<N; ++j)
 		{
